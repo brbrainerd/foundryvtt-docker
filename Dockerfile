@@ -88,7 +88,7 @@ RUN addgroup --system --gid ${FOUNDRY_UID} foundry \
 
 VOLUME ["/data"]
 # HTTP Server
-EXPOSE 30000/TCP
+EXPOSE 30000
 # TURN Server
 # Not exposing TURN ports due to bug in Docker.
 # See: https://github.com/moby/moby/issues/11185
